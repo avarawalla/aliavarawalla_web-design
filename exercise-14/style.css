@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+p {
+    font-size: 200px;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    body{
+        color: crimson;
+    }
+    p {
+        font-size: 100px;}
+    nav {
+        display:none 100px;}
+}

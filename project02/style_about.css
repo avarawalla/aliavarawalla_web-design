@@ -1,0 +1,62 @@
+/* CSS FOR ABOUT PAGE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #F6F3EC ;
+    z-index: -2;
+    overflow-x: hidden; 
+}
+.titleAbout {
+    font-family: Bodoni Moda;
+    text-transform: uppercase;
+    display: flex;
+    padding: 10px;
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.highlight{
+    width: 40%;
+    height: 20%;
+    position: absolute;
+    z-index:-2
+}
+
+.container{
+    box-sizing: border-box;   
+    
+    width: 100vw;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    
+    }
+.item {
+        box-sizing: border-box;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px
+    }
+.photo {
+    height: 70%;
+    width: 70%;
+}
+.description{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS FOR WELCOME PAGE */
+.overlay{
+    position: fixed;
+    display: block;
+    height: 100vw;
+    width: 100vw;
+    background-color: #F6F3EC ;
+    opacity: 90%;
+}
+
+.title {
+    font-family: Bodoni Moda;
+    text-transform: uppercase;
+    display: flex;
+    padding: 30px;
+    font-size: 80px;
+    width: 50%;
+}
+.title:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+.right{
+    justify-content: right;
+}
+.highlight{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    z-index:0;
+}
+.img{
+    width: 50%;
+    height: 50%;
+    display: none;
+    margin: auto; 
+    }
+ .title:hover img{
+        display:show;
+    }  
+.landingPage{
+        background-color: #F6F3EC ;
+        width: 100vw;
+        height: 100vw;
+    }
+
