@@ -1,0 +1,363 @@
+/* CSS FOR ABOUT PAGE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    
+}
+
+body {
+    background-color: #F6F3EC ;
+
+}
+
+/*HEADER STYLING */
+
+.header {
+    font-family: Bodoni Moda;
+    text-transform: uppercase;
+    font-size: 20px;
+    color:  rgb(28, 50,49);
+    padding-left: 5%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-color:  rgb(230,208,200);
+    border-width: 2px;
+}
+.logo{
+width: 7%;
+margin-left: 5%;
+margin-right: 5%;
+}
+a:link {
+text-decoration: none;
+}
+a:visited { 
+text-decoration: none; 
+color:rgb(28, 50,49); 
+}
+a:hover{
+text-decoration: underline;
+}
+
+/*HEADER STYLING*/
+
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+        "box1 box2 box3 box3 box3"
+        "box4"
+        "box5"
+        "box6";
+  }
+  
+  .box1 {
+    grid-area:"box1";
+    border-right-style: solid;
+    border-color:  rgb(230,208,200);
+  }
+  .box2 {
+    grid-area:"box2";
+    border-right-style: solid;
+    border-color:  rgb(230,208,200);  
+  }
+  .box3 {
+    grid-area:"box3";
+  }
+  .box4{
+    grid-area:box4;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-color: rgb(230,208,200)
+  }
+  .box5{
+    grid-area:box5;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-color:  rgb(230,208,200);
+    padding-top: 80px;
+    /*border-color: #E6D0C3; */
+  }
+  .box6{
+    grid-area:box6;
+    border-top-style: solid;
+    border-color:  rgb(230,208,200);
+    /*border-color: #E6D0C3; */
+  }
+.box4, .box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.image {
+    width: 60%;
+    border: solid;
+    border-color: rgb(28, 50,49);
+}
+#photo{
+    width: 45%;
+}
+.hi{
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0, auto;
+    font-size: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: rgb(28, 50,49);
+}
+.name {
+    font-family: Abril Fatface, serif;
+    font-size: 50px;  
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(176, 31, 47);
+    color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.item {
+padding: 20px 60px;
+align-items: center;
+margin: auto;
+}
+
+.date{
+font-family: 'Courier New', Courier, monospace;
+color: rgb(28, 50,49);
+font-size: 15px;
+}
+
+.degree{
+font-family: Bodoni Moda, serif;
+text-transform: uppercase;
+color: rgb(176, 31, 47);
+font-size: 20px;
+}
+
+.school{
+    font-family: bodoni Moda, serif;
+    color: rgb(28, 50,49);
+    font-size: 17px;
+    }
+
+.experience {
+    font-family: bodoni Moda, serif;
+    font-size: 20px;  
+    color:rgb(176, 31, 47);
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+.asterix {
+    font-size: 17px;
+    font-family: bodoni moda, serif;
+    float:left;
+    padding-top: 30px
+}
+.description {
+    font-family: bodoni moda, serif;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 30px;
+
+}
+.contact {
+    font-family: Abril Fatface, serif;
+    font-size: 30px;  
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(176, 31, 47);
+    color: transparent;
+    padding: 20px 60px;
+    align-items: center;
+    margin: auto;
+
+}
+.contact2 {
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    color: rgb(28, 50,49);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.asterix2 {
+    font-size: 17px;
+    font-family: bodoni moda, serif;
+    float:left;
+    padding-top: 20px
+}
+.description2 {
+    font-family: bodoni moda, serif;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: rgb(28, 50,49);
+}
+.description2:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+a:visited { 
+    text-decoration: none; color:rgb(28, 50,49); 
+}
+.item2 {
+    padding-left: 60px;
+    align-items: center;
+    margin: auto;
+    }
+
+
+
+@media screen and (max-width: 768px) {
+    * {
+        overflow-x:scroll;    
+    }   
+    .header {
+        font-size: 15px;
+    }
+    .box5{
+        padding-top: 30px;
+      }
+    #photo{
+        width: 70%;
+    }
+    .hi{
+        font-size: 15px;
+    }
+    .name {
+        font-size: 40px;  
+    }
+    .item {
+        padding: 10px 30px;
+    }
+        
+    .date{
+        font-size: 12px;
+    }
+        
+    .degree{
+        font-size: 15px;
+    }
+    .school{
+        font-size: 15px;
+    }
+    .experience {
+        font-size: 15px;  
+        padding-top: 30px;
+    }
+    .asterix {
+        font-size: 12px;
+        padding-top: 15px
+    }
+    .description {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .contact {
+        font-size: 30px;  
+        padding: 20px 60px;
+    }
+    .contact2 {
+        font-size: 15px;
+    }
+    .asterix2 {
+        font-size: 15px;
+        padding-top: 15px
+    }
+    .description2 {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+}    
+@media screen and (max-width: 414px) {
+    * {
+        overflow-x:scroll;    
+    }   
+    .header {
+        font-size: 12px;
+    }
+    .logo{
+        width: 15%;
+        }
+    .grid-layout{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6";
+    }
+    .box5{
+        padding-top: 30px;
+      }
+    #photo{
+        width: 70%;
+    }
+    .hi{
+        font-size: 15px;
+    }
+    .name {
+        font-size: 40px;  
+    }
+    .item {
+        padding: 10px 30px;
+    }
+        
+    .date{
+        font-size: 12px;
+    }
+        
+    .degree{
+        font-size: 15px;
+    }
+    .school{
+        font-size: 15px;
+    }
+    .experience {
+        font-size: 15px;  
+        padding-top: 30px;
+    }
+    .asterix {
+        font-size: 12px;
+        padding-top: 15px
+    }
+    .description {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .contact {
+        font-size: 30px;  
+        padding: 20px 60px;
+    }
+    .contact2 {
+        font-size: 15px;
+    }
+    .asterix2 {
+        font-size: 15px;
+        padding-top: 15px
+    }
+    .description2 {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+}    

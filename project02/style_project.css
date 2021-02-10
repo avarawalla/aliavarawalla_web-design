@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F3EC ;
+    border-color:  rgb(230,208,200);
+    border-width: 2px;
+}
+.header {
+        font-family: Bodoni Moda, serif;
+        text-transform: uppercase;
+        font-size: 30px;
+        color:  rgb(28, 50,49);
+        padding-left: 5%;
+        text-align: center;
+    }
+
+.projectInfo{
+    display: flex;
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 20px;
+    align-items: center;
+    }
+
+.projectBio {
+    text-align: center;
+}
+
+.projectTitle {
+    font-family: Abril Fatface, serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(176, 31, 47);
+    color: transparent;
+    font-size: 50px;
+}
+.subtitle {
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:  rgb(28, 50,49);
+}
+.location {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 50,49);
+    font-size: 15px;
+    padding: 10px;
+}
+.projectDescription{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 20px;
+}
+.section{
+    width: 100px;
+}
+
+
+
+
+/* GRID LAYOUT STYLING */
+
+.grid-layout {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1fr);
+        width: 100vw;
+      }
+      .projectInfo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-right-style: solid;
+      }
+      .projectBio {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-top-style: solid;
+        border-bottom-style: solid; 
+      }
+      .projectDescription {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-bottom-style: solid;
+        border-right-style: solid; 
+      }
+      .section {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        
+      }

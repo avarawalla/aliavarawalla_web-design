@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F3EC ;
+    border-color:  rgb(230,208,200);
+    border-width: 2px;
+    overflow-x:hidden;
+}
+
+/*HEADER STYLING */
+
+.header {
+        font-family: Bodoni Moda, serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        color:  rgb(28, 50,49);
+        padding-left: 5%;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+.logo{
+  width: 7%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited { 
+    text-decoration: none; 
+    color:rgb(28, 50,49); 
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/*HEADER STYLING*/
+
+
+
+
+.projectInfo{
+    display: flex;
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 20px;
+    align-items: center;
+    }
+
+.projectBio {
+    text-align: center;
+}
+
+.projectTitle {
+    font-family: Abril Fatface, serif;
+    color:rgb(176, 31, 47); 
+    font-size: 50px;
+}
+.subtitle {
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:  rgb(28, 50,49);
+}
+.location {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 50,49);
+    font-size: 15px;
+    padding: 10px;
+}
+.projectDescription{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 20px;
+}
+.section{
+    width: 100px;
+}
+ol{
+  width: 50%;
+  padding-left: 70px;
+  align-self: flex-end;
+  padding-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+.bespokeText{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+.description{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color:rgb(28, 50,49);
+  margin-top: 20px;
+}
+.description3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color:rgb(28, 50,49);
+}
+.description4{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color:rgb(28, 50,49);
+  padding-bottom: 10px;
+}
+
+
+/* GRID LAYOUT STYLING */
+
+.grid-layout {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1fr);
+        width: 100vw;
+      }
+      .projectInfo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-right-style: solid;
+      }
+      .projectBio {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-top-style: solid;
+        border-bottom-style: solid; 
+      }
+      .projectDescription {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-bottom-style: solid;
+        border-right-style: solid; 
+      }
+      .floorplan {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        border-bottom-style: solid;
+        padding: 20px;
+        display: flex;
+      }
+      .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .render {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .render2 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .workspace {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        display: flex;
+        justify-content: center;
+        border-top-style: solid;
+        border-bottom-style: solid; 
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .bespoke {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .drawing {
+        grid-column-start: 3;
+        grid-column-end: 6;
+      }
+      .bespokeText {
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      
+
+/* PHOTO STYLING */
+
+.work {
+  width: 77%;
+}
+.render1 { 
+  width: 90%;
+  padding: 20px; 
+
+}
+.axo {
+  width: 50%;
+}
+.furniture {
+  padding-top:50px;
+  width: 80%;
+}
+.detail {
+  width: 90%;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    font-size: 15px;
+  }
+  .logo{
+    width: 10%;
+  } 
+  .projectInfo{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .projectTitle {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .projectDescription {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom-style: solid;
+    border-right-style: solid; 
+    display: flex;
+    align-items: center;
+  }
+  .floorplan {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    padding: 20px;
+    display: block;
+  }
+  .axo {
+    width: 100%;
+  }
+  ol{
+    width: 100%;
+    font-size: 12px;
+  }
+
+@media screen and (max-width: 414px) {
+  * {
+    overflow-x:scroll;    
+}   
+.header {
+    font-size: 12px;
+}
+.logo{
+    width: 15%;
+    }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1fr);
+    width: 100vw;
+  }
+  .projectInfo{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-right-style: none;
+  }
+  .projectBio {
+    grid-column-start:1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-top-style: none;
+  }
+  .projectDescription {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-right-style: none; 
+  }
+  .floorplan {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-bottom-style: solid;
+    padding: 20px;
+    display: block;
+  }
+  .bespoke {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .drawing {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .projectTitle {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .axo {
+    width: 100%;
+  }
+  ol{
+    width: 100%;
+    font-size: 12px;
+  }
+  .column{
+    display: block;
+  }
+  .render {
+    display:block;
+    padding-left: 45px;
+
+  }
+  .render2 {
+    padding-left: 45px;
+    display:block;
+  }
+  .description3{
+    text-align: center;
+  }
+  .description4 {
+    text-align: center;
+  }
+  .bespokeText{
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}

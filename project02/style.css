@@ -1,52 +1,229 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
 
-/* CSS FOR WELCOME PAGE */
+/* CSS FOR WELCOME OVERLAY PAGE */
+
 .overlay{
     position: fixed;
     display: block;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
+    z-index: 2;
     background-color: #F6F3EC ;
-    opacity: 90%;
+    overflow-x: hidden;
+
+}
+/*.overlay::before{
+    content: "";
+    background: url(img/paper.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 9%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+} */
+#ad {
+    font-family: Bodoni Moda, serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    opacity: 98%;    
+    z-index: 5;
+    position: relative ;
+    color: rgb(28, 50,49);
+}
+.arch {
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    z-index: 5;
+}
+.ampersand{
+    font-family: Abril Fatface, serif;
+    text-transform: uppercase;
+    font-size: 90px;
+    position: absolute;
+    z-index:1;
+    margin-top: -5%;
+    /* color: #E8F5C9; 
+    color: rgb(140, 139, 95)*/
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(176, 31, 47);
+    color: transparent;
+
+}
+.name {
+    font-family: Abril Fatface, serif;
+    font-size: 100px;
+    margin-left: 15%;
+    margin-top: 5%;
+    /*color: #9FA5D5;*/
+}
+#opaque{
+    color: rgb(176, 31, 47);
+    position: absolute;
+    z-index: 2;
+}
+.clear {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(207, 165, 193);
+    color: transparent;
+    z-index: 0;
+}
+#bottom {
+    margin-top: 50px;
+    position: absolute
+}
+#top{
+    margin-top: -50px;
+    position: absolute
 }
 
+
+
+
+/*FOR ABOUT/WORK PAGE*/
+
+.body{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 .title {
-    font-family: Bodoni Moda;
+    font-family: Bodoni Moda, serif;
     text-transform: uppercase;
     display: flex;
-    padding: 30px;
     font-size: 80px;
     width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:  rgb(28, 50,49);
 }
-.title:hover {
+.landingPage{
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F6F3EC ;
+}
+
+.work:hover {
     font-style: italic;
     text-decoration: underline;
 }
-.right{
-    justify-content: right;
+.about:hover {
+    font-style: italic;
+    text-decoration: underline;
 }
-.highlight{
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    z-index:0;
+.about{
+    padding-top: 15px;
+    border-top-style: solid;
+    border-color:rgb(176, 31, 47);
 }
-.img{
-    width: 50%;
-    height: 50%;
-    display: none;
-    margin: auto; 
-    }
- .title:hover img{
-        display:show;
-    }  
-.landingPage{
-        background-color: #F6F3EC ;
-        width: 100vw;
-        height: 100vw;
+
+img {
+        object-fit: cover;
+        display: none;
+        height: 50vh;
+}
+.images {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   
+}
+.work{
+    padding-bottom: 15px;
+
+}
+
+a:link {
+    text-decoration: none;
     }
 
+a:visited { 
+    text-decoration: none; 
+    color:rgb(28, 50,49); 
+    }
+
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    
+    .overlay{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    #ad {
+        font-size: 30px;
+    }
+    .ampersand{
+        font-size: 50px;
+    }
+    .name {
+        font-size: 70px;
+    }
+    #bottom {
+            margin-top: 25px;
+    }
+    #top{
+            margin-top: -25px;
+    }
+
+    /*FOR ABOUT/WORK PAGE*/
+    .body{
+            overflow-x: scroll;
+            overflow-y: scroll;
+    }
+    .title {
+        font-size: 50px;
+        padding-left: 70px;
+    } 
+}
+
+@media screen and (max-width: 414px) {
+    
+    .overlay{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    #ad {
+        font-size: 30px;
+    }
+    .ampersand{
+        font-size: 50px;
+        margin-top: -10%;
+    }
+    .name {
+        padding-top: 50px;
+        font-size: 40px;
+    }
+    #bottom {
+            margin-top: 10px;
+    }
+    #top{
+            margin-top: -10px;
+    }
+
+    /*FOR ABOUT/WORK PAGE*/
+    .body{
+            overflow-x: scroll;
+            overflow-y: scroll;
+    }
+    .title {
+        font-size: 50px;
+    } 
+}
