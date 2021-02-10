@@ -30,8 +30,9 @@ width: 7%;
 margin-left: 5%;
 margin-right: 5%;
 }
-a:link {
+.header a:link {
 text-decoration: none;
+color:  rgb(28, 50,49);
 }
 .header a:visited{ 
 text-decoration: none;
